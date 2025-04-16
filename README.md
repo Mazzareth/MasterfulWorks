@@ -59,3 +59,22 @@ To learn more about Next.js, take a look at the following resources:
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
+
+### Steps:
+
+1.  **Push to Git Provider:** Make sure your code is pushed to a Git repository (GitHub, GitLab, Bitbucket) using the instructions in the "Pushing to GitHub" section above.
+2.  **Import Project on Vercel:**
+    *   Go to your [Vercel Dashboard](https://vercel.com/dashboard).
+    *   Click "Add New..." -> "Project".
+    *   Import the Git repository you just pushed.
+3.  **Configure Project:**
+    *   Vercel should automatically detect that this is a Next.js project and configure the build settings correctly. You usually don't need to change anything here.
+    *   Configure any necessary Environment Variables (e.g., for database connections, API keys) in the project settings on Vercel.
+4.  **Deploy:** Click the "Deploy" button. Vercel will build and deploy your project. You'll get a default `.vercel.app` URL.
+5.  **Add Custom Domain:**
+    *   Once deployed, go to your project's "Settings" tab on Vercel.
+    *   Select the "Domains" menu.
+    *   Enter your custom domain name (e.g., `yourdomain.com`) and click "Add".
+    *   Vercel will provide instructions on how to configure your DNS records. This usually involves adding an `A` record or a `CNAME` record to your domain registrar's DNS settings (like GoDaddy, Namecheap, Google Domains, etc.).
+    *   Follow the specific instructions provided by Vercel for your domain. DNS changes can take some time to propagate (up to 48 hours, but often much faster).
+6.  **Verification:** Vercel will automatically attempt to verify the domain configuration and issue an SSL certificate. Once verified, your site will be live on your custom domain.
